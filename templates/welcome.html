@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Bienvenida, {{ username }}!</h1>
+    <img src="../static/img/fondo.png" class="imagen-fondo"  alt="fondo" > 
+    
+    <a href="{{ url_for('cerrar_bienvenida') }}">Cerrar Sesión</a>
+    
+
+</body>
+
+</html>
